@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name Comfy
-// @version 1.1.2
+// @version 1.2.2
 // @author JustTheo
 // @namespace http://tampermonkey.net/
 // @run-at document-start
-// @include https://discord.com/*
+// @include https://discord.com/*x
 // @description TOS Safe version of Comfy from BetterDiscord
 // ==/UserScript==
 
@@ -1203,33 +1203,6 @@ rect[mask="url(#svg-mask-status-offline)"], rect[mask="url(#svg-mask-status-onli
   right: -185px;
   background: var(--blurple);
   z-index: 1;
-}
-/*---------------------------------------- SLIDE IN AND OUT ANIMATION ---------------  -*/
-/* MEMBER LIST */
-[class|=membersWrap] {
-    opacity: 0;
-    width: 10px;
-    min-width: 40px;
-    -webkit-transition: opacity 0.3s ease-in-out, width 0.5s;
-    -moz-transition: opacity 0.3s ease-in-out;
-    -ms-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
-}
-[class|=membersWrap]:hover {
-    opacity: 1;
-    width: 240px;
-}
-.members-1998pB {
-    opacity: 0;
-    width: 40px;
-    -webkit-transition: opacity 0.3s ease-in-out, width 0.5s;
-    -moz-transition: opacity 0.3s ease-in-out;
-    -ms-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
-}
-.members-1998pB:hover {
-    opacity: 1;
-    width: 240px;
 }
 /* --------------------------- 🚥 WINDOWS BUTTONS PART --------------------------- */
 
